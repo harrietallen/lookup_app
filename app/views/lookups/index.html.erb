@@ -1,0 +1,33 @@
+<h1>Listing lookups</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Url</th>
+      <th>Name</th>
+      <th>Date saved</th>
+      <th>User</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lookups.each do |lookup| %>
+      <tr>
+        <td><%= lookup.url %></td>
+        <td><%= lookup.name %></td>
+        <td><%= lookup.date_saved %></td>
+        <td><%= lookup.user_id %></td>
+        <td><%= link_to 'Show', lookup %></td>
+        <td><%= link_to 'Edit', edit_lookup_path(lookup) %></td>
+        <td><%= link_to 'Destroy', lookup, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Lookup', new_lookup_path %>

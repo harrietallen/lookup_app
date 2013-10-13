@@ -1,0 +1,2 @@
+module NavPageHelper
+end

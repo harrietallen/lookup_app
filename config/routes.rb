@@ -1,6 +1,9 @@
 LookupApp::Application.routes.draw do
   get "nav_page/home"
   root "nav_page#home"
+  
+ 
+ 
   resources :lookups
 
   resources :users

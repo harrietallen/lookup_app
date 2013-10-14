@@ -1,4 +1,4 @@
-<h1>Editing Bookmark Lookup</h1>
+<h1>Editing lookup</h1>
 
 <%= render 'form' %>
 
